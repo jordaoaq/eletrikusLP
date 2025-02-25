@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELETRIKUS - Mobilidade Ecológica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="/assets/favicon.ico">
+</head>
+<body>
+    <div class="scroll-indicator">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <div class="arrow"></div>
+    </div>
+    <div id="progress">
+        <span id="progress-value" style="color: #43b90b;">&#x1F815;</span>
+    </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/logoeletrikus.png" alt="Logo Eletrikus" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-main">LETRIKUS</span>
+                    <span class="logo-sub">MobilidadeEcológica</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#avaliacoes">Avaliações</a>
+                <button class="nossas-lojas">Nossas Lojas</button>
+            </div>
+            <button class="menu-mobile"><span></span></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Seja bem-vindo(a)!</h2>
+                    <h1>O futuro da<br>mobilidade<br>está <span>aqui</span></h1>
+                    <div class="social-buttons">
+                        <a href="https://www.facebook.com/eletrikus.mobilidade/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/eletrikus.mobilidade/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <div class="whatsapp-dropdown">
+                            <a href="#" class="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+                            <div class="whatsapp-content">
+                                <a href="https://wa.me/5513996321122" target="_blank">Santos</a>
+                                <a href="https://wa.me/5513996154897" target="_blank">Praia Grande</a>
+                                <a href="https://wa.me/13996321122" target="_blank">São Vicente - Brisamar</a>
+                                <a href="https://wa.me/5513996154897" target="_blank">São Vicente - Japuí</a>
+                                <a href="https://wa.me/551334267763" target="_blank">Itanhaém</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <img src="assets/circle.png" alt="Círculo Tecnológico" class="tech-base">
+                    <img src="assets/bike-verde.png" alt="Moto Elétrica" class="moto-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Nova seção após intro-section e antes de vehicles-section -->
+        <section class="about-section" id="sobre">
+            <h2>SOBRE NÓS</h2>
+            <div class="about-container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>A <span class="highlight-green">Eletrikus</span> é pioneira na <span class="highlight-green">venda e aluguel</span> de veículos elétricos sustentáveis no litoral paulista. 
+                           Desde nossa fundação, temos como missão oferecer soluções de transporte que 
+                           combinam tecnologia, conforto e responsabilidade ambiental. Nossos variados 
+                           modelos de motos elétricas representam o futuro da mobilidade urbana, 
+                           proporcionando uma experiência única de condução com zero emissões.</p>
+                    </div>
+                    <div class="about-video">
+                        <iframe 
+                            src="https://www.facebook.com/plugins/video.php?height=317&href=https%3A%2F%2Fwww.facebook.com%2Feletrikus.mobilidade%2Fvideos%2F3228785854067498%2F&show_text=false&width=560&t=0" 
+                            height="317" 
+                            style="border:none;overflow:hidden" 
+                            scrolling="no" 
+                            frameborder="0" 
+                            allowfullscreen="true" 
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                            allowFullScreen="true">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vehicles-section" id="produtos">
+            <h2 class="vehicles-title">NOSSOS VEÍCULOS</h2>
+            <div class="carousel-wrapper">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item" 
+                        data-title="Shineray PT1"
+                        data-motor="1500 Watts de potência"
+                        data-bateria="65 Volts / 20A Lítio"
+                        data-velocidade="30 km/h"
+                        data-autonomia="até 40km por carga"
+                        data-pneu="12''"
+                        data-freios="A disco dianteiro & traseiro"
+                        data-peso="80kg"
+                        data-recarga="4-6 horas">
+                        <img src="assets/bike-amarela.png" alt="Moto Elétrica Amarela">
+                    </div>
+                    <div class="carousel-item" 
+                        data-title="Neco e-pop"
+                        data-motor="4000 Watts de potência"
+                        data-bateria="60 Volts / 20A Lítio"
+                        data-velocidade="65 km/h"
+                        data-autonomia="até 35km por carga"
+                        data-pneu="12''"
+                        data-freios="A disco dianteiro & traseiro"
+                        data-peso="180kg"
+                        data-recarga="4-6 horas">
+                        <img src="assets/bike-vazada.png" alt="Moto Elétrica Preta">
+                    </div>
+                    <div class="carousel-item" 
+                        data-title="Honda U-BE"
+                        data-motor="2000 Watts de potência"
+                        data-bateria="60 Volts / 20A Lítio"
+                        data-velocidade="60 km/h"
+                        data-autonomia="até 50km por carga"
+                        data-pneu="12''"
+                        data-freios="A disco dianteiro & traseiro"
+                        data-peso="250kg"
+                        data-recarga="4-6 horas">
+                        <img src="assets/bike-honda.png" alt="Moto Elétrica Azul">
+                    </div>
+                    <div class="carousel-item" 
+                        data-title="sousa plus"
+                        data-motor="2000 Watts de potência"
+                        data-bateria="60 Volts / 20A Lítio"
+                        data-velocidade="40 km/h"
+                        data-autonomia="até 40km por carga"
+                        data-pneu="12''"
+                        data-freios="A disco dianteiro & traseiro"
+                        data-peso="120kg"
+                        data-recarga="4-6 horas">
+                        <img src="assets/moto.png" alt="Moto Elétrica Honda">
+                    </div>
+                    <div class="carousel-item" 
+                        data-title="FAAST F2F"
+                        data-motor="2000 Watts de potência"
+                        data-bateria="60 Volts / 20A Lítio"
+                        data-velocidade="49 km/h"
+                        data-autonomia="até 40km por carga"
+                        data-pneu="12''"
+                        data-freios="A disco dianteiro & traseiro"
+                        data-peso="160kg"
+                        data-recarga="4-6 horas">
+                        <img src="assets/bike-branca.png" alt="Moto Elétrica Branca">
+                        </div>
+                    </div>
+                </div>
+                <h1 id="moto-title" class="moto-title"></h1>
+
+            </div>
+            <div class="specs-container">
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <img src="assets/raio.png" alt="Motor">
+                        <h3>Motor</h3>
+                        <p id="spec-motor">-</p>
+                    </div>
+                    <div class="spec-item">
+                        <img src="assets/bateria.png" alt="Bateria">
+                        <h3>Bateria</h3>
+                        <p id="spec-bateria">-</p>
+                    </div>
+                    <div class="spec-item">
+                        <img src="assets/velocimetro.png" alt="Velocidade">
+                        <h3>Velocidade Máxima</h3>
+                        <p id="spec-velocidade">-</p>
+                    </div>
+                    <div class="spec-item">
+                        <img src="assets/bateria.png" alt="Autonomia">
+                        <h3>Autonomia</h3>
+                        <p id="spec-autonomia">-</p>
+                    </div>
+                    <div class="spec-item">
+                        <img src="assets/pneu.png" alt="Pneu">
+                        <h3>Pneu</h3>
+                        <p id="spec-pneu">-</p>
+                    </div>
+                    <div class="spec-item">
+                        <img src="assets/disco-de-freio.png" alt="Freios">
+                        <h3>Freios</h3>
+                        <p id="spec-freios">-</p>
+                    </div>
+                    <div class="spec-item">
+                        <img src="assets/peso.png" alt="Peso">
+                        <h3>Peso suportado</h3>
+                        <p id="spec-peso">-</p>
+                    </div>
+                    <div class="spec-item">
+                        <img src="assets/relogio.png" alt="Recarga">
+                        <h3>Recarga</h3>
+                        <p id="spec-recarga">-</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vehicles-description-container">
+            <div class="vehicles-description">
+                    <img src="assets/manutencao.png" alt="Serviço de Manutenção" class="maintenance-image">
+                <p>Nós oferecemos serviços de reparo e manutenção para nossos produtos,
+                    garantindo que eles continuem a funcionar no seu melhor desempenho. Nossa
+                    equipe de especialistas está sempre disponível para fornecer suporte e
+                    assistência aos nossos clientes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section" id="avaliacoes">
+            <h2>NOSSOS CLIENTES SATISFEITOS</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <img src="assets/pic-1.png" alt="Cliente João" class="client-image">
+                    <p class="testimonial-text">"Comprei e não me arrependo! Ela é super leve e perfeita para os passeios no litoral. Aquele ventinho na cara e o barulho zero fazem a diferença."</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3 class="client-name">João S.</h3>
+                    <span class="client-status">Cliente Satisfeito</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="assets/pic-2.png" alt="Cliente Mariana" class="client-image">
+                    <p class="testimonial-text">"Minha moto elétrica virou parceira das meus rolês na orla! É tão prática que eu posso ir da Aviação ao Forte sem nem perceber!"</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3 class="client-name">Mariana L.</h3>
+                    <span class="client-status">Cliente Satisfeita</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="assets/pic-3.png" alt="Cliente Carlos" class="client-image">
+                    <p class="testimonial-text">"Sempre que venho com meus filhos para Praia Grande alugo uma moto elétrica. Virou uma tradição da família! E o melhor: sem espalhar poluição."</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="client-name">Carlos R.</h3>
+                    <span class="client-status">Cliente Satisfeito</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="stores-section">
+        <h2>LOJAS</h2>
+        <div class="stores-buttons">
+            <button class="store-btn active" data-city="santos">Santos</button>
+            <button class="store-btn" data-city="praia-grande">Praia Grande</button>
+            <button class="store-btn" data-city="sao-vicente">São Vicente</button>
+            <button class="store-btn" data-city="itanhaem">Itanhaém</button>
+        </div>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telefone</h3>
+                    <p id="store-phone">(13) 99632-1122 <br> (13) 3307-8555</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Endereço</h3>
+                    <p id="store-address">Rua Minas Gerais, 13 - Boqueirão</p>
+                    <div class="location-buttons" id="location-buttons">
+                        <button class="location-btn active" data-location="japui">Japuí</button>
+                        <button class="location-btn" data-location="brisamar">Shopping Brisamar</button>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horário</h3>
+                    <p id="store-hours">Todos os dias das 9h às 21h</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p id="store-email">eletrikus.suporte@gmail.com</p>
+                </div>
+            </div>
+            <div class="map-container" id="store-map">
+                <!-- O iframe do mapa será atualizado via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>Desenvolvido por <a href="#" style="color: var(--primary-color); text-decoration: none;">Jordão Quirino</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
